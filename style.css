@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0.5rem;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(to right, rgb(214, 228, 237), rgb(162, 147, 191));
+}
+
+.card_container {
+    width: 60vw;
+    display: grid;
+    grid-template-rows: repeat(auto-fill, 1fr);
+    grid-template-columns: repeat(8, 1fr);
+    grid-gap: 0.5rem;
+    justify-items: center;
+}
+
+.main_container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 150px;
+    background-color: #4a9643;
+    cursor: pointer;
+    user-select: none;
+    border-radius: 10px;
+}
+
+/* .card:active {
+    transform: rotateY(45deg);
+    transition: all 2s ease-in-out;
+} */
+    
+.card > * {
+    pointer-events: none;
+}
+
+.card:hover {
+    box-shadow: 5px 5px 5px #0e1a0d;
+    transition: box-shadow 0.5s;
+}
+
+.icon {
+    position: absolute;
+    height: 180px;
+    width: 120px;
+    /* -webkit-transition: all 1s linear 0s;
+    transition: all 1s linear 0s; */
+}
+
+.hidden {
+    display: none; 
+    /* changed visibility hidden to display none, test if it doesnt break
+    I need to use hidden class for side bar  */
+}
+
+.activeCard {
+    background: #32716c;
+    box-shadow: 5px 5px 5px #0e1a0d;
+    transition: box-shadow 0.5s;
+}
+
+.unableCard {
+    pointer-events: none;
+}
+
+.unableCardPermanent {
+    pointer-events: none;
+    background: #AA3939;
+}
+
+
+/* SIDEBAR AND FORMS */
+
+.sidebar {
+    border-radius: 10px;
+    background: #BAD455;   
+    width: 15vw;
+    margin: 0.5rem;
+    padding: 0.5rem;
+}
+
+.sidebar * {
+    border-radius: 10px;
+    border: none;
+}
+
+.player_form {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 0.5rem;
+}
+.player_form span {
+    color: white;
+    font: 1.2rem sans-serif;
+
+}
+
+.player_form .nick {
+    width: 100%;
+}
+
+.player_form .color {
+    width: 5%;
+    background: white;
+    height: 100%;
+}
+
+.player_number select {
+    width: 100%;
+}
+
+#1 {
+    background:"#AA1111";
+}
+
+.player_form.active_player span {
+    font: 1.2rem sans-serif;
+    color: red;
+    font-weight: 900;
+}
+
+.active_player {
+    background: #799316;
+}
+
+.nick {
+    color: Black;
+    font-size: 1.3rem;
+
+}
