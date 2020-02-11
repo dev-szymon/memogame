@@ -23,10 +23,12 @@
   },
   "homepage": "https://github.com/dev-szymon/memogame#readme",
   "devDependencies": {
+    "@babel/core": "^7.8.4",
+    "@babel/preset-env": "^7.8.4",
     "babel-core": "^6.26.3",
     "babel-loader": "^8.0.6",
-    "babel-preset-env": "^1.7.0",
     "webpack": "^4.41.6",
+    "webpack-cli": "^4.0.0-beta.2",
     "webpack-dev-server": "^3.10.3"
   }
 }
