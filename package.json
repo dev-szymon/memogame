@@ -1,0 +1,32 @@
+{
+  "name": "memogame",
+  "version": "1.0.0",
+  "description": "A simple memory game build with html css and js",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dev-szymon/memogame.git"
+  },
+  "keywords": [
+    "memory",
+    "memo",
+    "game"
+  ],
+  "author": "Szymon Gazda",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dev-szymon/memogame/issues"
+  },
+  "homepage": "https://github.com/dev-szymon/memogame#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.0.6",
+    "babel-preset-env": "^1.7.0",
+    "webpack": "^4.41.6",
+    "webpack-dev-server": "^3.10.3"
+  }
+}
